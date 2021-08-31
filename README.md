@@ -1,77 +1,61 @@
 # VxUiKit Using Component
 
-This project demonstrates how to use Vx UiKit components to create amazing pages using components from our design system.
+Este projeto demonstra como você pode importar os incríveis compontens do nosso design system e utilizar em seus projetos.
 
-## Install
+## Instalação
 
 ```
 npm i @maikvortx/ui-kit
 ```
 
-## Usage
+## Importando os componente do UiKit
 
-Import our component into your page and customize it as you wish:
-
-```
-<Button variant="contained" color="primary" id="Button">Default</Button>
-
-<Button variant="contained" color="primary" id="Button" disabled>Disabled</Button>
-
-
+Para usar o uikit e aproveitar os componentes do nosso design system realize a instalação do pacote abaixo:
 
 ```
+npm i @maikvortx/ui-kit
+```
 
-### `yarn test`
+Após a instalação do pacote importe os componetnes que deseja usar em seu projeto:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+import { Button, Input, DatePicker } from '@maikvortx/ui-kit'
 
-### `yarn build`
+<!-- Button -->
+<Button color="primary" size="sm">Small</Button>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- Input -->
+<Input
+    id="regular"
+    labelText="Regular"
+    inputProps={{
+        placeholder: "Regular"
+    }}
+    formControlProps={{
+        fullWidth: true
+    }}
+/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- DatePicker -->
+<DatePicker
+    id="regular"
+    labelText="Regular"
+    variant="outlined"
+    inputProps={{
+        placeholder: "Regular"
+    }}
+    formControlProps={{
+        fullWidth: true
+    }}
+/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `yarn eject`
+## Como publicar uma nova versão do pacote de componentes?
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Para publicar uma nova versão do pacote dos compoentes, altere a campo `version` no package.js aumentando uma versão conforme suas alterações. Importante seguir o padrão de semantic release para a publicação das versões do projeto. Após a alteração da versão execute os comandos abaixo:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+npm run compile
+npm publish
+```
