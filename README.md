@@ -1,18 +1,25 @@
-# Getting Started with Create React App
+# VxUiKit Using Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project demonstrates how to use Vx UiKit components to create amazing pages using components from our design system.
 
-## Available Scripts
+## Install
 
-In the project directory, you can run:
+```
+npm i @maikvortx/ui-kit
+```
 
-### `yarn start`
+## Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Import our component into your page and customize it as you wish:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+<Button variant="contained" color="primary" id="Button">Default</Button>
+
+<Button variant="contained" color="primary" id="Button" disabled>Disabled</Button>
+
+
+
+```
 
 ### `yarn test`
 
