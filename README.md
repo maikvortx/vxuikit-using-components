@@ -5,7 +5,7 @@ Este projeto demonstra como você pode importar os incríveis compontens do noss
 ## Instalação
 
 ```
-npm i @maikvortx/ui-kit
+npm i @vortx-dtvm/ui-kit-components
 ```
 
 ## Importando os componente do UiKit
@@ -13,13 +13,13 @@ npm i @maikvortx/ui-kit
 Para usar o uikit e aproveitar os componentes do nosso design system realize a instalação do pacote abaixo:
 
 ```
-npm i @maikvortx/ui-kit
+npm i @vortx-dtvm/ui-kit-components
 ```
 
 Após a instalação do pacote importe os componetnes que deseja usar em seu projeto:
 
 ```
-import { Button, Input, DatePicker } from '@maikvortx/ui-kit'
+import { Button, Input, DatePicker } from '@vortx-dtvm/ui-kit-components'
 
 <!-- Button -->
 <Button color="primary" size="sm">Small</Button>
