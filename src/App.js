@@ -1,5 +1,5 @@
 import './App.css';
-import { Button, Small, ThemeProvider, CustomTabs, Pagination, GridItem, GridContainer, Input, Dropdown, DatePicker, Header, Parallax } from '@maikvortx/ui-kit'
+import { Button, Small, ThemeProvider, CustomTabs, Pagination, GridItem, GridContainer, Input, Dropdown, DatePicker, Header, Parallax } from '@vortx-dtvm/ui-kit-components'
 import { Text, Title } from './styles'
 import GetApp from "@material-ui/icons/GetApp";
 import { Favorite, InsertDriveFile, Error, Search } from '@material-ui/icons';
